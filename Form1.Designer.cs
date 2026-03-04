@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -38,14 +39,14 @@
             button8 = new Button();
             button9 = new Button();
             label1 = new Label();
-            label2 = new Label();
+            TurnLable = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(168, 94);
+            button1.Location = new Point(35, 75);
             button1.Name = "button1";
-            button1.Size = new Size(94, 81);
+            button1.Size = new Size(106, 81);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -53,9 +54,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(288, 94);
+            button2.Location = new Point(170, 75);
             button2.Name = "button2";
-            button2.Size = new Size(94, 81);
+            button2.Size = new Size(106, 81);
             button2.TabIndex = 1;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
@@ -63,9 +64,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(404, 94);
+            button3.Location = new Point(300, 75);
             button3.Name = "button3";
-            button3.Size = new Size(94, 81);
+            button3.Size = new Size(106, 81);
             button3.TabIndex = 2;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
@@ -73,9 +74,9 @@
             // 
             // button4
             // 
-            button4.Location = new Point(168, 193);
+            button4.Location = new Point(35, 174);
             button4.Name = "button4";
-            button4.Size = new Size(94, 81);
+            button4.Size = new Size(106, 81);
             button4.TabIndex = 3;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
@@ -83,9 +84,9 @@
             // 
             // button5
             // 
-            button5.Location = new Point(288, 193);
+            button5.Location = new Point(170, 174);
             button5.Name = "button5";
-            button5.Size = new Size(94, 81);
+            button5.Size = new Size(106, 81);
             button5.TabIndex = 4;
             button5.Text = "button5";
             button5.UseVisualStyleBackColor = true;
@@ -93,9 +94,9 @@
             // 
             // button6
             // 
-            button6.Location = new Point(404, 193);
+            button6.Location = new Point(300, 174);
             button6.Name = "button6";
-            button6.Size = new Size(94, 81);
+            button6.Size = new Size(106, 81);
             button6.TabIndex = 5;
             button6.Text = "button6";
             button6.UseVisualStyleBackColor = true;
@@ -103,9 +104,9 @@
             // 
             // button7
             // 
-            button7.Location = new Point(168, 293);
+            button7.Location = new Point(35, 274);
             button7.Name = "button7";
-            button7.Size = new Size(94, 81);
+            button7.Size = new Size(106, 81);
             button7.TabIndex = 6;
             button7.Text = "button7";
             button7.UseVisualStyleBackColor = true;
@@ -113,9 +114,9 @@
             // 
             // button8
             // 
-            button8.Location = new Point(288, 293);
+            button8.Location = new Point(170, 274);
             button8.Name = "button8";
-            button8.Size = new Size(94, 81);
+            button8.Size = new Size(106, 81);
             button8.TabIndex = 7;
             button8.Text = "button8";
             button8.UseVisualStyleBackColor = true;
@@ -123,9 +124,9 @@
             // 
             // button9
             // 
-            button9.Location = new Point(404, 293);
+            button9.Location = new Point(300, 274);
             button9.Name = "button9";
-            button9.Size = new Size(94, 81);
+            button9.Size = new Size(106, 81);
             button9.TabIndex = 8;
             button9.Text = "button9";
             button9.UseVisualStyleBackColor = true;
@@ -135,28 +136,29 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(266, 46);
+            label1.Location = new Point(180, 27);
             label1.Name = "label1";
-            label1.Size = new Size(75, 28);
+            label1.Size = new Size(63, 28);
             label1.TabIndex = 9;
-            label1.Text = "turno :";
+            label1.Text = "turn :";
             // 
-            // label2
+            // TurnLable
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(359, 51);
-            label2.Name = "label2";
-            label2.Size = new Size(23, 23);
-            label2.TabIndex = 10;
-            label2.Text = "O";
+            TurnLable.AutoSize = true;
+            TurnLable.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            TurnLable.Location = new Point(249, 32);
+            TurnLable.Name = "TurnLable";
+            TurnLable.Size = new Size(23, 23);
+            TurnLable.TabIndex = 10;
+            TurnLable.Text = "O";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(687, 450);
-            Controls.Add(label2);
+            BackColor = Color.RosyBrown;
+            ClientSize = new Size(445, 397);
+            Controls.Add(TurnLable);
             Controls.Add(label1);
             Controls.Add(button9);
             Controls.Add(button8);
@@ -167,6 +169,8 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -185,6 +189,6 @@
         private Button button8;
         private Button button9;
         private Label label1;
-        private Label label2;
+        private Label TurnLable;
     }
 }
